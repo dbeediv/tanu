@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Provide Your Basic Details</h2>
+        <form id="detailsForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="location">Place of Living:</label>
+            <input type="text" id="location" required>
+            <label for="incident">Place of Incident:</label>
+            <input type="text" id="incident" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('detailsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = "questions.html";
+        });
+    </script>
+</body>
+</html>

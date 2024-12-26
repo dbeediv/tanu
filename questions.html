@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Answer the Following Questions</h2>
+        <form id="questionsForm">
+            <div>
+                <label>1. Describe the issue you’re facing:</label>
+                <textarea></textarea>
+            </div>
+            <div>
+                <label>2. Were there any witnesses? If so, mention them:</label>
+                <textarea></textarea>
+            </div>
+            <div>
+                <label>3. Has this incident been reported before?</label>
+                <textarea></textarea>
+            </div>
+            <div>
+                <label>4. What assistance do you expect?</label>
+                <textarea></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('questionsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = "thankyou.html";
+        });
+    </script>
+</body>
+</html>
